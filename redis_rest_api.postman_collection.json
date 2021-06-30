@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "5d56a9b5-1c49-4c0b-b9fb-ed459269b508",
+		"name": "redis_rest_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:5000/getByTime?start=1624802720&end=1624802730",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/getByTime?start=1624802720&end=1624802730",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getByTime"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1624802720"
+						},
+						{
+							"key": "end",
+							"value": "1624802730"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/getLast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/getLast",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"getLast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/publish/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/publish/?content=hello world",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"publish",
+						""
+					],
+					"query": [
+						{
+							"key": "content",
+							"value": "hello world"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+version: '2'
+services:
+    redis:
+        image: redis
+    flask:
+        build: .
+        environment:
+            - REDIS_HOST=redis
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/code
+    
